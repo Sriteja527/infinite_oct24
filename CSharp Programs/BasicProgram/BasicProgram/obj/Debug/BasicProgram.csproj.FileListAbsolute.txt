@@ -1,7 +1,0 @@
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\bin\Debug\BasicProgram.exe.config
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\bin\Debug\BasicProgram.exe
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\bin\Debug\BasicProgram.pdb
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\obj\Debug\BasicProgram.csproj.AssemblyReference.cache
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\obj\Debug\BasicProgram.csproj.CoreCompileInputs.cache
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\obj\Debug\BasicProgram.exe
-C:\dotnettraining\CSharp Programs\BasicProgram\BasicProgram\obj\Debug\BasicProgram.pdb
