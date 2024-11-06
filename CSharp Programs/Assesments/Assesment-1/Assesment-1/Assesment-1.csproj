@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Assesment_1.Occurences</StartupObject>
+    <StartupObject>Assesment_1.Exchange</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
