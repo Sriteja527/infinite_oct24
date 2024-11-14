@@ -15,14 +15,34 @@ namespace Assesment_2
     }
     public class Undergraduate : Student
     {
-        Student s;
         
         public override Boolean IsPassed(bool grade){  // false
-            s.Name = Console.ReadLine();
-            s.Studentid = Convert.ToInt32(Console.ReadLine());
-            s.Grade = Convert.ToDouble(Console.ReadLine());
-            if (s.Grade > 70.0)   // 81.0 > 70.0 -> true
+            Name = Console.ReadLine();
+            Studentid = Convert.ToInt32(Console.ReadLine());
+            Grade = Convert.ToDouble(Console.ReadLine());
+            if (Grade > 70.0)   // 81.0 > 70.0 -> true
             {
+                Console.WriteLine("pass");
+                return true;  // true
+            }
+            else
+            {
+                Console.WriteLine("fail");
+                return false;
+            }
+        }
+
+    }
+    public class Graduate : Student
+    {
+        public override Boolean IsPassed(bool grade)
+        {  // false
+            Name = Console.ReadLine();
+            Studentid = Convert.ToInt32(Console.ReadLine());
+            Grade = Convert.ToDouble(Console.ReadLine());
+            if (Grade > 80.0)   // 81.0 > 70.0 -> true
+            {
+                
                 return true;  // true
             }
             else
@@ -30,7 +50,6 @@ namespace Assesment_2
                 return false;
             }
         }
-
     }
 
     public class Student1 {

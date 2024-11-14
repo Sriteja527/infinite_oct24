@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5182935-7444-46B3-AA4B-8A3EDB9C863D}</ProjectGuid>
+    <ProjectGuid>{7D03A5F9-BEC6-4C47-A862-D0570028C0BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Assesment_2</RootNamespace>
-    <AssemblyName>Assesment-2</AssemblyName>
+    <RootNamespace>Assignment_5</RootNamespace>
+    <AssemblyName>Assignment-5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Assesment_2.Student1</StartupObject>
+    <StartupObject>Assignment_5.CountFiles</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,9 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Products.cs" />
-    <Compile Include="Student1.cs" />
+    <Compile Include="CountFiles.cs" />
+    <Compile Include="FileProgram.cs" />
+    <Compile Include="FirstQuestion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
