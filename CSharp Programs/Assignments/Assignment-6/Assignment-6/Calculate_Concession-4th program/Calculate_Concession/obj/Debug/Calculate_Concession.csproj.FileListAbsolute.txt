@@ -1,0 +1,6 @@
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\bin\Debug\Calculate_Concession.pdb
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\obj\Debug\Calculate_Concession.csproj.AssemblyReference.cache
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\obj\Debug\Calculate_Concession.csproj.CoreCompileInputs.cache
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\obj\Debug\Calculate_Concession.pdb
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\bin\Debug\Calculate_Concession.exe
+C:\dotnettraining\CSharp Programs\Assignments\Assignment-6\Assignment-6\Calculate_Concession\Calculate_Concession\obj\Debug\Calculate_Concession.exe
