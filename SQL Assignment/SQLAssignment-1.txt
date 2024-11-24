@@ -1,0 +1,84 @@
+Clients table:
+Create Query:
+============
+create table Clients(Client_id number(4) Primary Key, cname varchar2(40) Not Null, Address varchar2(30), Email varchar2(30) Unique, phone number(10), Bussiness varchar2(20) Not Null);
+Insert Query:
+============
+insert into Clients (Client_id, cname, Address, Email, phone, bussiness) values(1001, "ACME Utilities", "Noida", "contact@acmeutil.com", 9567880032, "Manufacturing");
+insert into Clients (Client_id, cname, Address, Email, phone, bussiness) values(1002, "Trackon Consultants", "Mumbai", "consult@trackon.com", 8734210090, "Consultant");
+insert into Clients (Client_id, cname, Address, Email, phone, bussiness) values(1003, "MoneySaver Distributors", "Kolkata", "save@moneysaver.com", 7799886655, "Reseller");
+insert into Clients (Client_id, cname, Address, Email, phone, bussiness) values(1004, "Lawful Corp", "Chennai", "justice@lawful.com", 9210342219, "Professional");
+Select Query:
+=============
+select * from Clients;
+
+
+Employees table:
+Create Query:
+============
+create table Employees(Empno Number(4) primary key, Empname varchar2(20) not null, job varchar2(15), Salary number(7) CHECK(Salary > 0), Deptno number(2),CONSTRAINT fk_dept FOREIGN KEY (Deptno) REFERENCES Departments(Deptno));
+
+Insert Query:
+============
+insert into Employees(Empno, Empname, job, salary, Deptno) values(7001, "Sandeep", "Analyst", 25000, 10), (7002, "Rajesh", "Designer", 30000, 10), (7003, "Madhav", "Developer", 40000, 20), (7004, "Manoj", "Developer", 40000, 20), (7005, "Abhay", "Designer", 35000, 10), (7006, "Uma","Tester", 30000, 30), (7007, "Gita", "Tech. Writer", 30000, 40), (7008, "Priya", "Tester", 35000, 30), (7009, "Nutan", "Developer", 45000, 20), (7010, "Smita", "Analyst", 20000, 10), (7011, "Anand", "Project Mgr", 65000, 10);
+Select Query:
+=============
+select * from Employees;
+
+Departments table:
+
+Create table:
+=============
+create table Departments(Deptno Number(2) Primary Key, Dname varchar2(15) Not Null, Loc varchar2(20));
+
+
+Insert Query:
+============
+insert into Departments values(10, "Design", "pune"),(20, "Development", "Pune"), (30, "Testing", "Mumbai"), (40, "Document", "Mumbai");
+
+Select Query:
+============
+select * from Departments;
+
+
+Projects table: 
+Create Query:
+============
+CREATE TABLE Projects (
+    project_id NUMBER(3) PRIMARY KEY, 
+    Descr VARCHAR2(30) NOT NULL,        
+    Start_Date DATE,                    
+    Planned_End_Date DATE,              
+    Actual_End_Date DATE,               
+    Budget NUMBER(10) CHECK (Budget > 0),  
+    Client_id NUMBER(3),  
+    CONSTRAINT fk_dept FOREIGN KEY (Client_id) REFERENCES Clients(Client_id)  
+);
+
+Insert Query:
+=============
+insert into Projects values(401, "Inventory", '01-Apr-11', '01-Oct-11', '31-Oct-11', 150000, 1001),
+(402, "Accounting", '01-Aug-11', '01-Jan-12',NULL, 500000, 1002), (403, "Payroll", '01-Oct-11', '31-Dec-11',NULL, 75000, 1003), (404, "Contact Mgmt", '01-Nov-11', '31-Dec-11', NULL, 50000, 1004);
+
+Select Query:
+=============
+select * from Projects;
+
+EmployeeProject Tasks:
+Create Query:
+============
+
+create table EmpProjectTasks(Project_ID Number(3) Primary Key References Projects(project_id), Empno Number(4)   References Employees(Empno), Start_Date Date, End_Date Date, Task varchar2(25) Not Null, Status varchar2(15) Not Null);
+
+Insert Query:
+=============
+insert into EmpProjectTasks values(401, 7001, '01-Apr-11', '20-Apr-11', 'System Analysis', 'Completed'), (401, 7002, '21-Apr-11', '30-May-11', 'System Design', 'Completed'),(401, 7003, '01-Jun-11', '15-Jul-11', 'Coding', 'Completed'), (401, 7004, '18-Jul-11', '01-Sep-11', 'Coding', 'Completed'), (401, 7006, '03-Sep-11', '15-Sep-11', 'Testing', 'Completed'), (401, 7009, '18-Sep-11', '05-Oct-11', 'Code Change', 'Completed'), (401, 7008, '06-Oct-11', '16-Oct-11', 'Testing', 'Completed'),(401, 7007, '06-Oct-11', '22-Oct-11', 'Documentation', 'Completed'), (401, 7011, '22-Oct-11', '31-Oct-11', 'Sign off', 'Completed'),
+(402, 7010, '01-Aug-11', '20-Aug-11', 'System Analysis', 'Completed'), (402, 7002, '22-Aug-11','30-Sep-11', 'System Design', 'Completed'), (402, 7004, '01-Oct-11', Null, 'Coding', 'In Progress');
+
+Select Query:
+============
+select * from EmployeeprojectTasks;
+
+
+
+
