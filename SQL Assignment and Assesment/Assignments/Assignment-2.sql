@@ -31,5 +31,33 @@ select  'Present job' as job  , count(job) as 'No.of Clerks Employed' from EMP w
 select job, AVG(sal) as 'Average Salary', count(job) as 'Count No.of Employees' from EMP where job in ('CLERK', 'SALESMAN', 'MANAGER', 'ANALYST', 'PRESIDENT') group by job; 
 --7th question List the employees with the lowest and highest salary.
 select ename, sal from EMP where sal = (select MIN(sal) from EMP) union select ename, sal from EMP where sal = (select MAX(sal) from EMP);
---8th question 
-select d.Deptno, d.Dname, d.loc, e.ename from DEPT as d join EMP e on d.Deptno = e.Deptno where d.Deptno <> e.Deptno;
+--8th question List full details of departments that don't have any employees.
+select * from DEPT left join EMP on DEPT.DEPTNO = EMP.DEPTNO where EMP.DEPTNO is null;
+--9th question Get the names and salaries of all the analysts earning more than 1200 who are based in department 20. Sort the answer by ascending order of name.
+select ename, sal
+from EMP 
+where job = 'ANALYST' and sal > 1200 and Deptno = 20
+order by ename asc
+--10th list its name and number together with the total salary paid to employees in that department. 
+select E.ename, E.empno,E.Deptno,sum(E.sal) as total_salary
+from EMP E join EMP E1 
+on E.Deptno = E1.Deptno
+group by E.ename,
+E.empno,
+E.Deptno;
+--11th question Find out salary of both MILLER and Smith
+select SAL from EMP 
+where ENAME in ('MILLER','SMITH')
+--12th Find out the names of the employees whose name begin with ‘A’ or ‘M’.
+select ENAME 
+from EMP 
+where ENAME like ('A%') or ENAME like ('M%')
+--13th Compute yearly salary of smith.
+select sal, sal * 12 as 'Yearly salary' from EMP where ename = 'SMITH';
+--14th List the name and salary for all employees whose salary is not in the range of 1500 and 2850.
+select ename, sal from EMP where sal not between 1500 and 2850; 
+--15th Find all managers who have more than 2 employees reporting to them
+select mgr_id, count(*) as Employee_Count
+from EMP 
+group by mgr_id 
+having count(*) > 2
