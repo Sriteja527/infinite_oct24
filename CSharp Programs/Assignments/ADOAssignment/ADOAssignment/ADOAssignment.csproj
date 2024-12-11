@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1764C87-12BA-4B96-87B9-A0079099444E}</ProjectGuid>
+    <ProjectGuid>{4FD1CC5B-1108-4E51-8420-B7BD0DD85664}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ADOAssignment_1</RootNamespace>
-    <AssemblyName>ADOAssignment-1</AssemblyName>
+    <RootNamespace>ADOAssignment</RootNamespace>
+    <AssemblyName>ADOAssignment</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

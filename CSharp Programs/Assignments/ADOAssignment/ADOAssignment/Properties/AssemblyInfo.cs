@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ADOAssignment-1")]
+[assembly: AssemblyTitle("ADOAssignment")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ADOAssignment-1")]
+[assembly: AssemblyProduct("ADOAssignment")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e1764c87-12ba-4b96-87b9-a0079099444e")]
+[assembly: Guid("4fd1cc5b-1108-4e51-8420-b7bd0dd85664")]
 
 // Version information for an assembly consists of the following four values:
 //
