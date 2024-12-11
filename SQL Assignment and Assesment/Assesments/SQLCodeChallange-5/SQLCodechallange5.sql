@@ -9,7 +9,7 @@ create table DEPT(Deptno int primary key, Dname varchar(20), loc varchar(20));
 create table EMP(empno int primary key, ename varchar(20), job varchar(20), mgr_id int, hiredate Date, sal int, comm int, Deptno int FOREIGN KEY REFERENCES DEPT(Deptno));
 SELECT * FROM EMP WHERE hiredate < DATEADD(YEAR, -5, GETDATE()) AND MONTH(hiredate) = MONTH(GETDATE());
 --4)Question
-create table Employee(EmpNo int, EName varchar(255), Sal decimal(10, 2), doj date);
+create table Employee(EmpNo int, EName varchar(255), Sal DECIMAL(10, 2), doj date);
 
 Begin transaction                                                                                     
 insert into Employee(EmpNo, EName, Sal, doj)values(1, 'Sriteja', 50000.11, '2001-01-29'),
