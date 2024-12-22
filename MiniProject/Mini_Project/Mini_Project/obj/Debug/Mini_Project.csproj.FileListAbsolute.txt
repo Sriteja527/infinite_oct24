@@ -1,0 +1,14 @@
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe.config
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.pdb
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.AssemblyReference.cache
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.CoreCompileInputs.cache
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.exe
+C:\dotnettraining\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.pdb
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe.config
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\bin\Debug\Mini_Project.pdb
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.AssemblyReference.cache
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.CoreCompileInputs.cache
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.exe
+C:\Users\sritejag\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\MiniProject\Mini_Project\Mini_Project\obj\Debug\Mini_Project.pdb
