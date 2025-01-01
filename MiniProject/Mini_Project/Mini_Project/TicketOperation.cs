@@ -34,7 +34,7 @@ namespace Mini_Project
                 sourcepoint = Console.ReadLine();
                 Console.WriteLine("Enter the destination place:");
                 destination_place = Console.ReadLine();
-                Console.WriteLine("Enter the source date with time:Enter date in (yyyy-MM-dd hh:mm)");
+                Console.WriteLine("Enter the source date with time:Enter date in (yyyy-MM-dd)");
                 DateTime source_time_part = Convert.ToDateTime(Console.ReadLine());
 
                 TimeSpan source_time = source_time_part.TimeOfDay;
@@ -114,7 +114,7 @@ namespace Mini_Project
             }
             else
             {
-                Console.WriteLine("Thank you:");
+               // Console.WriteLine("Thank you:");
             }
             if (data_count > 0 || dataAvailable)
             {

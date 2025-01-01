@@ -81,3 +81,5 @@ BEGIN
     END
 END
 select * from Addtrain;
+drop procedure sp_addtrain;
+drop table Addtrain;

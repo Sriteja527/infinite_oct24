@@ -20,7 +20,7 @@ namespace Mini_Project
                 Console.WriteLine("**************************");
                 Console.WriteLine("Enter the number: (1 or 2 or 3)");
                 Console.WriteLine("**************************");
-                int number = 0;
+               int number = 0;
 
                 number = Convert.ToInt32(Console.ReadLine());
 

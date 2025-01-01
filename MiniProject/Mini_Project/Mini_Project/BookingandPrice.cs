@@ -69,7 +69,7 @@ namespace Mini_Project
             }
             if (matched == 1)
             {
-               // Console.WriteLine("matched");
+                // Console.WriteLine("matched");
                 starting = count1 - 12;  // 24 - 12 = 12
                 Console.WriteLine("Enter the type of class:");
                 type_of_class = Console.ReadLine();
@@ -186,43 +186,43 @@ namespace Mini_Project
                     }
                 }
             }
-                    
-                    //username and gender fetching.
-                    User u;
-                    username = User.loginusername;
-                    Console.WriteLine("The username is:" + username);
-                    sqlconn = new SqlConnection("Data source = ICS-LT-D244D6GL; database = RailwaySystem; trusted_connection = true;");
-                    sqlconn.Open();
-                    sqlcomm = new SqlCommand("sp_registrationdisplay1", sqlconn);
-                    sqlcomm.CommandType = CommandType.StoredProcedure;
-                    sqlcomm.Parameters.Add(new SqlParameter("@username", SqlDbType.VarChar, 40)).Value = username;
-                    reader = sqlcomm.ExecuteReader();
-                    gender = null;
-                    while (reader.Read())
-                    {
-                        gender = reader[1].ToString();
-                    }
-                    sqlconn.Close();
-                    price = TicketOperation.price;
-                    train_number = TicketOperation.train_number;
-                    Console.WriteLine("***************************");
-                    Console.WriteLine("username:" + username);
-                    Console.WriteLine("gender:" + gender);
-                    Console.WriteLine("type_of_berth:" + type_of_berth);
-                    Console.WriteLine("available_seats:" + available_seats);
-                    Console.WriteLine("type_of_class:" + type_of_class);
-                    Console.WriteLine("train number:" + train_number);
-                    Console.WriteLine("train name:" + train_name);
-                    Console.WriteLine("no.of tickets:" + no_of_tickets);
-                    Console.WriteLine("price:" + price);
-                    Console.WriteLine("***************************");
-                    Console.WriteLine("Are you sure want to book the ticket if yes please enter(BookNow) or enter exit");
-                    String book = Console.ReadLine();
-                    if (book.ToLower() == "booknow")
-                    {
-                        BookingandCancellation b = new BookingandCancellation();
-                        b.booking();
-                    }
+
+            //username and gender fetching.
+            User u;
+            username = User.loginusername;
+            Console.WriteLine("The username is:" + username);
+            sqlconn = new SqlConnection("Data source = ICS-LT-D244D6GL; database = RailwaySystem; trusted_connection = true;");
+            sqlconn.Open();
+            sqlcomm = new SqlCommand("sp_registrationdisplay1", sqlconn);
+            sqlcomm.CommandType = CommandType.StoredProcedure;
+            sqlcomm.Parameters.Add(new SqlParameter("@username", SqlDbType.VarChar, 40)).Value = username;
+            reader = sqlcomm.ExecuteReader();
+            gender = null;
+            while (reader.Read())
+            {
+                gender = reader[1].ToString();
+            }
+            sqlconn.Close();
+            price = TicketOperation.price;
+            train_number = TicketOperation.train_number;
+            Console.WriteLine("***************************");
+            Console.WriteLine("username:" + username);
+            Console.WriteLine("gender:" + gender);
+            Console.WriteLine("type_of_berth:" + type_of_berth);
+            Console.WriteLine("available_seats:" + available_seats);
+            Console.WriteLine("type_of_class:" + type_of_class);
+            Console.WriteLine("train number:" + train_number);
+            Console.WriteLine("train name:" + train_name);
+            Console.WriteLine("no.of tickets:" + no_of_tickets);
+            Console.WriteLine("price:" + price);
+            Console.WriteLine("***************************");
+            Console.WriteLine("Are you sure want to book the ticket if yes please enter(BookNow) or enter exit");
+            String book = Console.ReadLine();
+            if (book.ToLower() == "booknow")
+            {
+                BookingandCancellation b = new BookingandCancellation();
+                b.booking();
+            }
         }
     }
 }

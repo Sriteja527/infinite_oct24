@@ -443,7 +443,7 @@ namespace Mini_Project
                         destination_point = Console.ReadLine();
                         Console.WriteLine("Enter the train name:");
                         train_name = Console.ReadLine();
-                        Console.WriteLine("Enter the source date with time: Enter date in (yyyy-MM-dd hh:mm) ");
+                        Console.WriteLine("Enter the source date with time: Enter date in (yyyy-MM-dd) ");
                         DateTime source_time_part = Convert.ToDateTime(Console.ReadLine());
                         source_time = source_time_part.TimeOfDay;
                         //    Console.WriteLine("Enter the destination date with time: Enter date in (yyyy-MM-dd hh:mm)");
