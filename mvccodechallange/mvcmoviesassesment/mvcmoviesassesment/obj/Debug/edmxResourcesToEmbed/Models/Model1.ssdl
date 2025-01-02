@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MoviesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MoviesDB.dbo.Movie' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="Mid" />
+    </Key>
+    <Property Name="Mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Moviename" Type="varchar" MaxLength="20" />
+    <Property Name="Dateofrelease" Type="date" />
+  </EntityType>
+  <EntityContainer Name="MoviesDBModelStoreContainer">
+    <EntitySet Name="Movie" EntityType="Self.Movie" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Movie].[Mid] AS [Mid], 
+    [Movie].[Moviename] AS [Moviename], 
+    [Movie].[Dateofrelease] AS [Dateofrelease]
+    FROM [dbo].[Movie] AS [Movie]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

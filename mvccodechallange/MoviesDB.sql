@@ -1,0 +1,1 @@
+create table Movie(Mid int Identity(1,1), Moviename varchar(20), Dateofrelease Date);

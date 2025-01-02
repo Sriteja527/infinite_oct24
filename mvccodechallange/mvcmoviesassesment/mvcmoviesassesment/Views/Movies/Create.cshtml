@@ -1,0 +1,22 @@
+﻿@model mvcmoviesassesment.Models.Movie
+
+@{ ViewBag.Title = "Create"; }
+
+<h2>Create without using scaffolded view</h2>
+
+@using (Html.BeginForm("Create", "Movie", FormMethod.Post))
+{
+<div>
+    <label for="Name">Moviename</label>
+    <input type="text" name="MovieName" id="MovieName" />
+</div>
+
+                <div>
+                    <label for="Dateofrelease">Dateofrelease</label>
+                    <input type="date" name="Dateofrelease" id="Dateofrelease" />
+                </div>
+
+                                <div>
+                                    <input type="submit" value="Create" />
+                                </div>
+                                }
